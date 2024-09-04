@@ -10,6 +10,57 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+ <form action="/submit-insurance" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+        </fieldset>
+        <br>
+
+        <!-- Car Brands Dropdown -->
+        <label for="cars">Car Brands:</label>
+        <select id="cars" name="cars">
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="mercedez">Mercedez</option>
+        </select>
+        <br><br>
+
+        <!-- Car Age Field -->
+        <label for="carage">Car Age:</label>
+        <input type="number" id="carage" name="carage" required>
+        <br><br>
+
+        <!-- Date of Purchase Field -->
+        <label for="dop">Date of Purchase (dop):</label>
+        <input type="date" id="dop" name="dop" required>
+        <br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button  class="button1" type="submit">Submit</button>
+    </form>
 
 </body>
 
